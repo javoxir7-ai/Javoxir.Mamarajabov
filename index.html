@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Javohir Mamarajabov</title>
+
+<style>
+  @import url('[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap)');
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: url('fon.jpg') center/cover fixed no-repeat;
+  }
+
+  /* Navbar */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+    text-align: center;
+    padding: 12px 0;
+    z-index: 10;
+  }
+
+  nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+  }
+
+  nav a:hover {
+    color: #5ce1e6;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  /* Home – to‘liq markazda */
+  #home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .profile-box {
+    background: rgba(0,0,0,0.65);
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    animation: fadeIn 1.2s ease-in;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 3px #5ce1e6;
+    margin-bottom: 20px;
+  }
+
+  .profile-box h1 {
+    color: #5ce1e6;
+    margin-bottom: 8px;
+  }
+
+  /* Skills */
+  #skills {
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    width: 80%;
+    margin: 60px auto;
+    padding: 40px;
+    text-align: center;
+  }
+
+  #skills h2 {
+    color: #5ce1e6;
+    margin-bottom: 25px;
+  }
+
+  #skills li {
+    list-style: none;
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    margin: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  /* Contact */
+  #contact {
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    padding: 30px;
+    border-radius: 15px;
+    width: 70%;
+    margin: 60px auto;
+  }
+
+  #contact h2 {
+    color: #5ce1e6;
+  }
+
+  #contact a {
+    color: #5ce1e6;
+    text-decoration: none;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  @media (max-width: 768px) {
+    .profile-box { width: 90%; }
+    #skills, #contact { width: 90%; }
+    .avatar { width: 120px; height: 120px; }
+  }
+</style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Asosiy</a>
+    <a href="#skills">Ko‘nikmalar</a>
+    <a href="#contact">Aloqa</a>
+  </nav>
+
+  <!-- Asosiy bo‘lim -->
+  <section id="home">
+    <div class="profile-box">
+      <img src="avatar.jpg" alt="Avatar" class="avatar" />
+      <h1>Salom! Men Javohir Mamarajabov</h1>
+      <p>Men axborot texnologiyalari sohasida o‘qiyman.</p>
+    </div>
+  </section>
+
+  <!-- Ko‘nikmalar -->
+  <section id="skills">
+    <h2>Men o‘rganayotgan narsalar</h2>
+    <ul>
+      <li>Python</li>
+      <li>HTML / CSS</li>
+      <li>Suniy Intlekt</li>
+      <li>Android dasturlash</li>
+      <li>Git &amp; GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Aloqa -->
+  <section id="contact">
+    <h2>Aloqa</h2>
+    <p>📞 <a href="tel:+998970797571">+998937075717</a></p>
+    <p>📧 <a href="mailto:javohirake7@gmail.com">javohirake7@gmail.com</a></p>
+    <p>💬 <a href="[t.me](https://t.me/foydalanuvchingiz)" target="_blank">Telegram orqali yozish</a></p>
+  </section>
+</body>
+</html>
